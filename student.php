@@ -14,12 +14,11 @@
         $this->name = $name;
         $this->id =  $id;
       }
-
-
     }
 
     $stuObj = new Student("Amy", 1);
     $stuObj = new Student("Dot", 2);
-
-
+    
+    //accessing the static property using Student class
+    echo Student::$stuCount;
 ?>
